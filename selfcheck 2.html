@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구글 로그인</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family:"Roboto", sans-serif;
+            text-align: center;
+        }
+        #login{
+            width:304px;
+            height:390px;
+            padding:28px, 44px;
+            border: 1px solid black;
+            margin: 100px auto;
+        }
+        #login fieldset{
+            border: none;
+        }
+        #login fieldset legend{
+            position: absolute;
+            top:-99999px;;
+        }
+        #login button{
+            background-color: white;
+            font-weight: bold;
+            border: 1px solid black;
+            width: 228px;
+            height: 44px;
+            padding: 0 10px;
+            margin-top: 30px;
+        }
+        #login input{
+            width:228px;
+            height:44px;
+            background-color: #eaeaea;
+            margin-bottom: 20px;
+            border: 1px solid white;
+            padding: 0px 10px;
+        }
+        #login >fieldset + p {
+            margin: 24px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #504444;
+        }
+        #login button[type="submit"]{
+            width: 228px;
+            height: 44px;
+            background-color: #373f3c;
+            font-size: 14px;
+            color: white;
+            margin-bottom: 27px;
+            font-weight: nomral;
+        }
+        #login a{
+            color:#2c3432;
+            font-size: 14px;
+            margin-bottom: 20px;
+            text-align: center;
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" id="login">
+        <fieldset>
+            <legend>로그인</legend>
+            <button type="button">
+                Log in with Google
+            </button>
+        </fieldset>
+        <p>or</p>
+        <fieldset>
+            <legend>일반 로그인</legend>
+            <label for="username">
+                <input type="text" id="Username" name="username" placeholder="Username">
+            </label>
+            <label for="Password">
+                <input type="text" id="Password" name="Password" placeholder="Password">
+            </label>
+            <button type="submit">
+                LOGIN
+            </button>
+        </fieldset>
+        <a href="#">Forgot your password?</a>
+    </form>
+</body>
+</html>
