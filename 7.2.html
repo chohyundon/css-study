@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid Layout</title>
+    <style>
+        .contaniner{
+            height: 300px;
+            background-color: black;
+            padding: 1rem;
+            display: grid;
+            color: white;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(2, 1fr);
+        }
+        .box{
+            color: white;
+            background-color: #ff5252;
+        }
+        .box:nth-child(2){
+            background-color: #bf5e5e;
+        }
+        .box:nth-child(3){
+            background-color: aqua;
+        }
+        .box:nth-child(4){
+            background-color:orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="contaniner">
+        <div class="box">a</div>
+        <div class="box">b</div>
+        <div class="box">c</div>
+        <div class="box">d</div>
+    </div>
+</body>
+</html>
